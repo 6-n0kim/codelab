@@ -1,0 +1,94 @@
+/* box model : 하나의 구역을 정의하며, 정의된 구역은 특정한 크기를 갖는다 */
+/* inline : 가로 및 세로 크기 지정이 안된다  */
+/* block : 가로 및 세로 크기 지정이 된다 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 1. margin : 요소와 요소 사이의 간격 */
+
+.margin{
+    background-color: lightblue;
+
+    /* 두개의 수치일 경우 첫번재는 위아래, 두번째는 좌우 */
+    /* 세개의 수치일 경우 첫번재는 위, 두번째는 좌우 세번째는 아래 */
+    /* 네개의 수치일 경우 위에서부터 시계방향 */
+    /* 축약 적용 위치는 패딩도 같다 */
+    margin: 10px 20px; /* 위-아래 , 좌-우 */
+}
+
+/* 2. padding : 컨텐츠와 경계선 사이의 거리 */
+.padding{
+    background-color: lightgreen;
+    padding: 10px 20px 30px 40px;
+}
+
+/* 3. border : 마진과 패딩 사이의 경계선 */
+
+.border {
+    /* boarder- style 은 필수입력값 */
+    border : 2px solid red;
+}
+
+/* 4. radius : 둥근 모서리 - 내접원의 반지름 값 */
+
+.radius { 
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+    background-color: yellow;
+    margin-top: 50px;
+
+    
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    /* border-radius: 10px 20px 30px; */
+
+    border-radius: 105px;
+}
+
+body{
+    height: 3000px;
+}
+
+/* 5. box-sizing: 디폴트는 content-box */
+/* - 패딩과 보더는 요소의 바깥쪽으로 늘어나는 것이 디폴트, 즉 content-box이다. */
+/* - border-box로 지정하면, 원래 크기를 유지하면서 패딩과 보더는 요소 안쪽으로 밀려들어간다. */
+
+.box-sizing{
+    background-color: lightcoral;
+    width: 100%;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.box-sizing > p{
+    width: 33.33%;
+    height: 100px;
+    border: 1px solid;
+}
+
+/* 6. background : 박스의 배경을 지정하며, 색 또는 이미지를 사용할 수 있다 */
+/* - background-color : 색상만 지정 */
+/* - background-image : 이미지 경로 지정 */
+/* - background-repeat : 이미지 사용 시 반복 여부 지정 - repeat이 디폴트 */
+/* - background-position : 이미지 사용 시 사진 위치 지정 */
+/* - background-size : 사진과 박스의 비율이 다를 경우 사진을 어떻게 채울지 지정 */
+
+.bg{
+    width: 300px;
+    height: 250px;
+    border : 1px solid;
+    /* background-image: url(cat_small.jpg);
+    background-repeat: no-repeat; */
+    /* background-position-x: center;
+    background-position-y: 50px; */
+    /* background-position : center top;
+    background-size : contain; */
+
+    background: url(cat_small.jpg) no-repeat center top / contain ;
+}

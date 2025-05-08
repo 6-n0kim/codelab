@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+
+
+/* 1. font-family : 글꼴 */
+/* - 콤마를 기준으로 글꼴을 검색하고, 모두 없으면 글자 모양 sans-serif(곧은 글씨), serif(장식체) 글꼴을 찾아 적용한다 */
+/* - 주로 웹폰트(google font)를 사용한다 */
+/* - 글자체는 콤마를 기준으로 앞에서부터 존재하는 글자체를 선택한다 */
+/* - serif(장식체), sans-serif(비장식제)를 뜻하며, 콤마 앞의 글자체가 없을때 최종적으로 장식체 또는 비장식체 중 아무 글자체나 선택하여 적용하라는 의미 */
+
+h2{
+    font-family : '창호체' , 'Agdasima' , sans-serif;
+}
+
+/* 2. font-weight : 글씨 두께 */
+/* - thin과 normal은 같다. 따라서 thin은 사용하지 않는다 */
+/* - bold와 bolder는 같다. 따라서 bolder는 사용하지 않는다 */
+/* - 웹폰트의 
+경우 글씨 두께가 수치로 세분화 되어 있어 편하다 */
+
+h2{
+    font-weight: 700;
+}
+
+/* 3. font-style : 글씨의 기울임 */
+/* - italic과 oblique는 같다. 따라서 oblique는 사용하지 않는다 */
+/* - normal은 원래 스타일로 변경한다. */
+
+em,
+i,
+strong
+{
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* 4. color: 글씨의 색상 */
+
+em {
+    color: red;
+}
+
+/* 5. text-decoration : 글자 선긋기 */
+/* - underline: 밑줄, overline:윗줄, line-through:취소선, none:선 없애기 */
+
+a{
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+/* 6. text-align: 글자 정렬 : left, center, rigth, justify */
+/* - 글자가 움직일 공간이 확보 되어야 한다. */
+
+ p{
+    text-align: center;
+    background: yellow;
+ }
+a{
+    text-align: center;
+    background: red;
+}
+
+/* 7. letter-spacing, word-spacing : 단어 및 글자 간격 */
+/* - 주로 제목이나 슬로건, 텍스트 로고 디자인 시 사용된다 */
+
+h1{
+    letter-spacing: -5px;
+    background: red;
+    width: 100px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+p.long{
+    text-align: left;
+    word-spacing: 10px;
+}
+
+/* 8. line-height: 줄간 조정 */
+/* - 글씨 크기에 따른 간격이므로 고정 값을 사용하지 않는다. */
+/* - 상대값을 사용하여야 하는데, 단위를 없이 숫자를 사용하면 em 단위가 디폴트가 된다. */
+
+p.long{
+    font-size: 20px;
+    line-height: 1.2; /* 140% = 1.4em = 1.4 */
+}
+
+/* 9. text-indent: 들여쓰기 */
+
+p.long{
+    text-indent: 10px;
+}
