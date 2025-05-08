@@ -1,0 +1,170 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+em,
+strong,
+i,
+b {
+    font-style: normal;
+    font-weight: normal
+}
+
+a {
+    text-decoration: none;
+    color: #bbb;
+    font-family: inherit;
+}
+
+img {
+    display: block;
+}
+
+/* Main Page Style */
+.wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    position: relative;
+}
+
+
+.main-section .bg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bgLine.png);
+    opacity: 0.1;
+}
+
+/* Header Style */
+header {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+header img {
+    width: 350px;
+}
+
+header .sns {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    gap: 1rem;
+}
+
+header .sns i {
+    font-size: 1.23rem;
+    transition: all 0.5s;
+}
+
+header .sns i:hover {
+    transform: scale(1.1);
+    display: block;
+    color: #fff;
+}
+
+header .sns li:last-child i {
+    font-size: 1.4rem;
+}
+
+/* Main Image Style */
+.main-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.main-img>img {
+    width: 100%;
+}
+
+
+/* Sub Navigation Style */
+nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 50px;
+    background: url(../img/tr.png);
+}
+
+nav>ul {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+nav>ul>li {
+    position: relative;
+    width: 16.66%;
+}
+
+nav>ul>li>a {
+    color: #aaa;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+nav>ul>li>a:hover {
+    transform: translateY(-20%);
+    opacity: 0;
+}
+
+nav>ul>li>div {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: url(../img/tr.png);
+}
+
+nav>ul>li>div>h2 {
+    position: absolute;
+    height: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
