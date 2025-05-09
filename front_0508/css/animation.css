@@ -1,0 +1,8 @@
+ /*
+   1. animation-name : 애니메이션 keyframes와 연결할 이름
+   2. animation-delay : 애니메이션 실행을 특정 시간동안 지연시켜준다.
+   3. animation-fill-mode : 애니메이션 실행 후 속성이 지속되게 한다(forwards 적용 시)
+   4. animation-iteration-count : 애니메이션 실행 횟수 지정
+   5. animation-direction : 애니메이션 변화 후 변화 이전으로 자동 계산하여 실행(alternate 적용 시)
+   6. animation-duration : 애니메이션 지속 시간 지정
+*/

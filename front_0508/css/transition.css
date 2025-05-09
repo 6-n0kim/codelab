@@ -1,0 +1,56 @@
+/*
+- transition(전환)은 한 요소에 적용된 스타일의 속성값을 다른 속성값으로 변하게 하는 것을 말한다.
+- transition의 적용은 전환 대상 요소에 지정한다.
+1. transition-property : 전환 대상을 지정한다. 일반적으로 all로 모두 지정한다.
+전환 대상 속성 참조 : https://www.w3schools.com/cssref/css_animatable.asp
+2. transition-duration: 전환이 진행되는 시간을 지정한다.
+3. transition-delay: 전환이 진행되기 전 지정 시간을 대기시킨다. 보통 잘 사용되지는 않는다.
+4. transition-timing-function: 전환이 진행되는 속도를 지정한다. 특히 cubic-bezier는 속도를 지정할 수 있다.
+*/
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    background-color: green;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    transition-property: width;
+    transition-duration: 2s;
+    transition-delay: 0.1s;
+}
+
+div:hover {
+    width: 600px;
+}
+
+div:nth-child(1) {
+    /* 같은속도 */
+    transition-timing-function: linear;
+}
+
+div:nth-child(2) {
+    /* 빠른 -> 느린   default   */
+    transition-timing-function: ease;
+}
+
+div:nth-child(3) {
+    /* 느린 -> 빠른 */
+    transition-timing-function: ease-in;
+}
+
+div:nth-child(4) {
+    /* 빠른-> 조금 빠른 -> 느린 */
+    transition-timing-function: ease-out;
+}
+
+div:nth-child(5) {
+    /* 조금 빠른-> 느린 -> 조금 빠른 */
+    transition-timing-function: ease-in-out;
+}
+
+div:nth-child(6) {
+    /* 사용자 정의 */
+    transition-timing-function: cubic-bezier(.17, .67, .83, .67);
+}

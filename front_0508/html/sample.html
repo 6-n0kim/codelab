@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Remix icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/sample.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>TodoList</h1>
+        <div class="write">
+            <input type="text" id="todoInput" placeholder="할일 작성">
+            <input type="button" class="todoBtn" onclick="insertTodo()" value="저장">
+        </div>
+        <div>
+            <ul id="list">
+                <!-- <li> <input type="text" id="readonlyInput" readonly=true value="${value}"> <button id="edit">수정</button
+                            id="delete"><button>삭제</button> </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="../js/sample.js"></script>
+</body>
+
+</html>

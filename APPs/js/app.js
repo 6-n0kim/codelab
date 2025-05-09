@@ -20,7 +20,7 @@ const navContents = {
 
 // 요소 삽입을 위한 DOM 변수
 const nav = document.querySelector('nav ul');
-
+console.log(nav);
 // 삽입될 요소 초기화 변수
 let navList = "";
 

@@ -1,0 +1,50 @@
+/*
+- transform(변환)은 요소에 특정 변형 효과를 지정한다. 일반적으로 2d 변형은 4가지가 쓰인다. 변환 속성은 주변 요소에 영향을 주지 않는다.
+
+
+1. translate : 요소의 위치를 이동 시킨다. x, y 좌표를 각각 지정할 수 있고, 좌표 없이 (xpx, ypx) 방식으로 함께 지정할 수도 있다.
+2. scale : 요소의 크기를 변화 시킨다. x, y 좌표를 각각 지정할 수 있고, 좌표 없이 (x배율, y배율) 방식으로 함께 지정할 수도 있다.
+3. skew : 요소를 특정 각도로 비튼다. x, y 좌표를 각각 지정할 수 있고, 좌표 없이 (xdeg, ydeg) 방식으로 함께 지정할 수도 있다.
+skewX는 x축을 고정시키고 세로를 비틀고, skewY는 y축을 고정시키고 가로를 비튼다고 이해하면 된다.
+4. rotate : 요소를 특정 각도로 돌린다.
+x, y축을 지정하면 해당 축을 기준으로 돌리게 되고, 둘 모두를 축약으로 지정하게 되면 중앙축이 적용되어 돌린다.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+.box:nth-child(1) .inner {
+    transform: translate(20px, 20px);
+}
+
+.box:nth-child(2) .inner {
+    transform: scale(1.6)
+}
+
+
+.box:nth-child(3) .inner {
+    transform: skewX(40deg)
+}
+
+.box:nth-child(4) .inner {
+    transform: rotateX(80deg)
+}
