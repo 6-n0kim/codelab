@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <link rel="stylesheet" href="../css/selector_1.css" />
+  </head>
+  <body>
+    <!-- 1. 태그 선택자: 태그 이름을 그대로 사용한다. -->
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+      laboriosam repudiandae eum omnis consectetur architecto, possimus cumque
+      cum ad ea. Adipisci ut architecto ullam id deleniti facilis nulla? Quas,
+      commodi?
+    </p>
+
+    <div>Division Tag</div>
+
+    <!-- 2. 클래스 선택자: 클래스 이름 앞에 .(마침표)를 찍는다. -->
+
+    <section class="section1">
+      <p class="para1">para 1</p>
+    </section>
+
+    <section class="section2">
+      <p class="para2">para 2</p>
+    </section>
+
+    <!-- 3. 아이디 선택자: 아이디 이름 앞에 #을 찍는다. -->
+    <section id="section1">
+      <p class="para1">para 3</p>
+    </section>
+
+    <section id="section2">
+      <p class="para2">para 4</p>
+    </section>
+
+    <!-- 4. 자식 선택자(직계 - >, 후손 - " ") -->
+    <ul>
+      <li>list-1</li>
+      <li>
+        list-2
+        <ul>
+          <li>sub-list-1</li>
+          <li>sub-list-2</li>
+        </ul>
+      </li>
+      <li>list-3</li>
+      <li>list-4</li>
+    </ul>
+
+    <!-- 5. 형제 선택자: 다음 요소 선택 - +, 이후 전체 요소 선택 = ~ -->
+
+    <h2>우리 형제를 소개합니다.</h2>
+    <ul>
+      <li>형제-1</li>
+      <li class="num-2">형제-2</li>
+      <li>형제-3</li>
+      <li>형제-4</li>
+      <li>형제-5</li>
+      <li>형제-6</li>
+    </ul>
+
+    <!-- 6. 가상 선택자: first-child, last-child, nth-child -->
+
+    <ul class="nth">
+      <li>list-1</li>
+      <li>list-2</li>
+      <li>list-3</li>
+      <li>list-4</li>
+      <li>list-5</li>
+      <li>list-6</li>
+      <li>list-7</li>
+      <li>list-8</li>
+      <li>list-9</li>
+    </ul>
+
+    <!-- 7. 속성 선택자: [속성명="속성값"] -->
+    <form action="">
+      <input type="text" placeholder="아이디" /><br />
+      <input type="text" placeholder="이름" /><br />
+      <input type="password" placeholder="비밀번호" /><br />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+/* flex는 2차원 요소의 레이아웃을 설계할 수 있는 속성값이다.
+요소에 display 속성에 flex라는 속성 값을 적용하면 대상 요소는 개념상의 container가 되고, 자식 요소들은 item이 된다.
+flex를 이용한 배치 속성은 container 요소에 적용한다.
+또한 디폴트 방향은 가로로 배치되고, 가로 방향이 주축, 세로 방향이 교차축이 된다. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  height: 400px;
+  border: 1px solid;
+  padding: 10px;
+  margin: auto;
+
+  display: flex;
+  /* flex-direction: row - default */
+  /* 요소의 가로크기 합산이 부모보다 크면 임의 분할하여 배치한다. */
+  /* 이를 방지하기 위해 flex-wrap: wrap으로 지정한다. */
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  _justify-content: space-between;
+
+  /* 주축 변경 */
+  _flex-direction: column;
+
+  /* 간격 조정 */
+  _row-gap: 10px;
+  _column-gap: 10px;
+  gap: 10px;
+}
+
+.item {
+  width: 30%;
+  height: 100px;
+  border: 1px solid;
+}

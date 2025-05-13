@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <!-- - 이미지
+      1. 사진의 크기 지정을 안하면 원래 사이즈의 사진이 구현된다.
+      2. 사진의 사이즈를 지정할 때는 가로나 세로 중 하나만 지정한다.
+      3. alt는 사진의 정보를 제공하고, 특히 사진의 설명을 음성으로 알려줄 때 사용된다.
+         따라서 사용 안 할 경우 웹접근성점수가 떨어진다.
+      4. 이미지는 별도의 독립적 사용 보다는 감싸는 구획 태그를 사용한다.
+ -->
+    <div class="wrapper">
+      <div class="img-box"></div>
+      <div class="img-box">
+        <img src="img/jongseo.jpg" alt="전종서" />
+      </div>
+      <div class="img-box"></div>
+    </div>
+
+    <style>
+      .wrapper {
+        display: flex;
+      }
+
+      .img-box {
+        width: 33.33%;
+        height: 210px;
+        border: 1px solid;
+        /* background: #eee; */
+        overflow: hidden;
+      }
+
+      .img-box:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .img-box img {
+        width: 100%;
+        z-index: 100;
+      }
+    </style>
+
+    <!-- - 비디오
+      1. 비디오 태그는  source에 주소를 입력하고 video 태그에 옵션을 입력한다.
+      2. autoplay는 muted와 함께 사용해야 한다.
+      3. mp4 확장 파일은 모든 브라우저에서 사용가능 하다.
+      4. controls : 컨트롤 제어 바 생성
+      5. loop : 자동 반복
+      6. autoplay : 자동 실행-->
+
+    <video controls autoplay muted loop>
+      <source src="img/nike.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>

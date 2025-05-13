@@ -1,0 +1,66 @@
+/* 태그 선택자 */
+p {
+  background: yellow;
+}
+
+div {
+  color: red;
+}
+
+/* 클래스 선택자 */
+.para1 {
+  color: red;
+}
+
+.section1 > p {
+  color: red;
+}
+
+.para2 {
+  color: lightsalmon;
+}
+
+.section2 > p {
+  color: lightsalmon;
+}
+
+/* 아이디 선택자 */
+#section1 > p {
+  background: green;
+}
+
+#section2 > p {
+  background: blue;
+}
+
+/* 전체 선택자 */
+/* 실제로 각각의 전체 요소에 영향을 미치는 선택자는 *이다 */
+/* 단 전체 폰트 사이즈를 지정할 때 html, body를 전체 선택자로 사용한다. */
+
+html,
+body {
+  font-size: 14px;
+}
+
+html {
+  _background: lightcyan;
+  border: 1px solid;
+}
+
+body {
+  background: lightgreen;
+  border: 1px solid;
+}
+
+* {
+  border: 1px solid;
+}
+
+/* 자식 선택자 */
+ul ul > li {
+  background: yellow;
+}
+
+ul > * {
+  color: blue;
+}
