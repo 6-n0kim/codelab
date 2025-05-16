@@ -1,0 +1,70 @@
+/* PC - 1020 */
+@media screen and (max-width: 1020px) {
+    #main-section .overlay {
+        background: #fff;
+    }
+
+
+    .slider-section .swiper-slide>div.slider-image {
+        height: 250px;
+    }
+
+
+    .insta-section .insta-info h4 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* TABLET - 768 */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+
+    header {
+        padding: 1.125rem 0;
+        background: #fff;
+        border-bottom: 1px solid var(--color-gray-d);
+    }
+
+
+    header .container>*:not(.logo, .menu-icon) {
+        display: none;
+    }
+
+
+    header .container>*:not(.mobile-menus, .info, .logo, .nav-wrapper) {
+        display: block;
+    }
+
+
+    header .mobile-menus {
+        /* !important - 적용 우선순위가 1순위로 바뀜 */
+        display: block !important;
+        position: absolute;
+        background: #999;
+        top: 100%;
+        z-index: 9999;
+    }
+
+
+    header .menu-icon i {
+        font-size: 1.5rem;
+    }
+
+
+    header .logo {
+        position: static;
+        transform: none;
+    }
+
+
+    header .logo a {
+        width: 80px;
+    }
+}
+
+
+/* MOBILE - 480 */

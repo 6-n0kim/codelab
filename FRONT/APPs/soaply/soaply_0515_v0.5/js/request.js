@@ -14,7 +14,7 @@ const getData = async () => {
         dataElement = `
           <div class="swiper-slide">
             <div class="slider-image">
-              <img src="images/${item.pro_img}" alt="" />
+              <img src="../images/${item.pro_img}" alt="" />
             </div>
             <div class="slider-text">
               <h4>${item.pro_name}</h4>
