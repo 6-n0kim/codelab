@@ -4,7 +4,7 @@
     background: #fff;
   }
 
-  .slider-section .swiper-slide>div.slider-image {
+  .slider-section .swiper-slide > div.slider-image {
     height: 250px;
   }
 
@@ -15,7 +15,6 @@
 
 /* TABLET - 768 */
 @media screen and (max-width: 768px) {
-
   /* Header Style */
   html {
     font-size: 14px;
@@ -27,7 +26,7 @@
     border-bottom: 1px solid var(--color-gray-d);
   }
 
-  header .container>*:not(.logo, .menu-icon) {
+  header .container > *:not(.logo, .menu-icon) {
     display: none;
   }
 
@@ -100,26 +99,26 @@
   }
 
   /* 한창호 */
-  .slider-section .swiper-slide>div.slider-image {
+  .slider-section .swiper-slide > div.slider-image {
     width: 70%;
   }
 
-  .slider-section .swiper-slide>div.slider-text {
+  .slider-section .swiper-slide > div.slider-text {
     width: 100%;
   }
 
-  .slider-section .swiper-slide>div.slider-text h4 {
+  .slider-section .swiper-slide > div.slider-text h4 {
     width: 100%;
     text-align: center;
   }
 
-  .slider-section .swiper-slide>div.slider-text p {
+  .slider-section .swiper-slide > div.slider-text p {
     width: 80%;
     text-align: center;
     margin: auto;
   }
 
-  .slider-section .swiper-slide>div.slider-text a {
+  .slider-section .swiper-slide > div.slider-text a {
     margin: auto;
   }
 
@@ -144,18 +143,17 @@
 
 /* Insta Style */
 @media screen and (max-width: 650px) {
-
   .insta-section .insta-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
 
-  .insta-section .insta-wrapper>div {
+  .insta-section .insta-wrapper > div {
     width: 80%;
   }
 
-  /* footer Style */
+  /* Footer Style */
   footer .footer-upper,
   footer .footer-info,
   footer .footer-lower {
@@ -164,14 +162,23 @@
     gap: 1.5rem;
   }
 
-  footer .fooer-sns li {
+  footer .footer-sns li {
     padding: 0 0.25rem;
   }
+
+  /* footer .footer-lower {
+    flex-direction: column;
+    gap: 1.5rem;
+  } */
+
+  /* footer .footer-info {
+    flex-direction: column;
+    align-items: center;
+  } */
 }
 
 /* MOBILE - 480 */
 @media screen and (max-width: 500px) {
-
   /* Main Landing Style */
   #main-section .landing-text-box {
     text-align: center;
@@ -186,15 +193,14 @@
   }
 
   /* Slider Style */
-  .slider-section .swiper-slide>div.slider-image {
+  .slider-section .swiper-slide > div.slider-image {
     width: 90%;
   }
 
   /* Insta Style */
-  .insta-section .insta-wrapper>div {
+  .insta-section .insta-wrapper > div {
     width: 100%;
   }
 
-
-
+  /* Footer Style */
 }

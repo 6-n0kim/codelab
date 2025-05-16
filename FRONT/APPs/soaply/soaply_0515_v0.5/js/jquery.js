@@ -18,8 +18,10 @@ $(function () {
 
         if ($(this).hasClass("active")) {
             $('.menu-icon i').attr("class", "ri-close-large-line");
+            $('.mobile-menus').slideDown("fast");
         } else {
             $('.menu-icon i').attr("class", "ri-menu-line");
+            $('.mobile-menus').slideUp("fast");
         }
     })
 });
