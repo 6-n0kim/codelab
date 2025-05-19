@@ -2,9 +2,6 @@
 const section2 = document.querySelector('.section2');
 const calendar = document.querySelector('.calendar');
 
-
-
-
 makeCal();
 function makeCal() {
 

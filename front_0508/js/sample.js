@@ -7,8 +7,8 @@ function insertTodo() {
     let value = todoInput.value.trim();
     if (value != "") {
         list.insertAdjacentHTML("beforeend",
-            `<li id="idx${idx}"> <input type="text" id="readonlyInput" disable = "true" value="${value}">
-            <button id="edit" onclick="editTodo(${idx}) ">수정</button>
+            `<li id="idx${idx}"> <input type="text" class="todoItem" value="${value}">
+            <button id="edit" onclick="editTodo(${idx},this) ">수정</button>
             <button id="delete" onclick="deleteTodo(${idx})">삭제</button> </li>`);
 
         idx++;
@@ -22,10 +22,15 @@ function deleteTodo(n) {
     idx--;
 }
 
-function editTodo(n) {
+function editTodo(n , btn) {
     let currentList = document.getElementById('idx' + n);
-    let currentInputText = currentList.firstChild;
-    currentInputText.disabled = false;
-    currentInputText.focus;
-    console.log(currentInputText.readonly)
+    let input = currentList.querySelector('.todoItem');
+    if (input.readOnly) {
+        input.readOnly = false;
+        input.focus();
+        btn.textContent = "저장";
+    } else {
+        input.readOnly = true;
+        btn.textContent = "수정";
+    }
 }
